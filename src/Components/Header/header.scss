@@ -1,0 +1,80 @@
+@import '../../variables';
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid $header-border-color;
+  height: 50px;
+  z-index: 999;
+}
+
+.header_content {
+  display: flex;
+  padding: 0 16px;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  transition-duration: 0.4s;
+  background-color: white-clr;
+  align-items: center;
+  border-bottom: 1px solid $header-border-color;
+}
+
+.header_logo {
+  display: block;
+  float: left;
+  margin: 3px 0 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 90px;
+  height: 43px;
+  a {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.user_block {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 16px;
+}
+
+.user_avatar {
+  padding-right: 32px;
+}
+
+.profilePic {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.menu_btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 50px;
+  width: 50px;
+  background-color: $white-clr;
+  border: 0;
+  border-bottom: 1px solid $header-border-color;
+  display: none;
+  color: $primary-color;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .header_logo {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: $laptop-width) {
+  .menu_btn {
+    display: block;
+  }
+}

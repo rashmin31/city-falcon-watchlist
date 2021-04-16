@@ -1,0 +1,67 @@
+@import '../../variables';
+
+.watchlist_body {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: $bg-color;
+}
+.watchlist_stories {
+  width: calc(100% - 340px);
+  padding: 20px 40px 39px;
+  position: relative;
+  background-color: $watchlist_story_bgColor;
+}
+
+.watchlist_stories_body {
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+}
+
+.watchlist_stories_body_content {
+  padding-left: 44px;
+  padding-right: 20px;
+}
+
+.watchlist_right_column {
+  background-color: $bg-color;
+  position: relative;
+}
+
+@media (max-width: $laptop-width) {
+  .watchlist_body {
+    padding-left: 0;
+    min-height: 100vh;
+  }
+
+  .watchlist_stories {
+    width: 100%;
+    padding-left: 20px 30px;
+    margin-top: 0;
+  }
+
+  .watchlist_right_column {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .watchlist_stories {
+    padding: 8px;
+  }
+  .watchlist_stories_body {
+    margin-top: 12px;
+  }
+
+  .watchlist_stories_body_content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .watchlist_stories_body_content {
+    padding-left: 0;
+  }
+}
