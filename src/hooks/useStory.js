@@ -83,6 +83,7 @@ const useStory = (count, selectedLanguages, selectedOrder) => {
           });
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [count, selectedLanguages, selectedOrder]);
   return { loading, error, stories };
 };
