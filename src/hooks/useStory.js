@@ -62,7 +62,6 @@ const useStory = (count, selectedLanguages, selectedOrder) => {
             });
             setNextToken(res.data.next_page_token);
             setLoading(false);
-            console.log(res.data.stories);
           })
           .catch((err) => {
             setError(true);
@@ -75,7 +74,6 @@ const useStory = (count, selectedLanguages, selectedOrder) => {
             setStories(res.data.stories);
             setNextToken(res.data.next_page_token);
             setLoading(false);
-            console.log(res.data.stories);
           })
           .catch((err) => {
             setError(true);

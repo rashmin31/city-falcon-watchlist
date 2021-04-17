@@ -1,5 +1,5 @@
 import { faFilter, faRedo } from '@fortawesome/free-solid-svg-icons';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Dropdown from '../Dropdown';
 import WatchlistBtn from '../WatchlistBtn';
 import './watchlistHeader.scss';
@@ -17,10 +17,6 @@ const WatchlistHeader = (props) => {
   const [openFilterPanel, setOpenFilterPanel] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(false);
   const [btnName, setBtnName] = useState(null);
-
-  useEffect(() => {
-    console.log('Inside WatchlistHeader.js!');
-  }, []);
 
   const onFilterBtnClick = () => {
     setOpenFilterPanel(!openFilterPanel);

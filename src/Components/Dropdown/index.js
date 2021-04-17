@@ -1,6 +1,6 @@
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect } from 'react';
+import React from 'react';
 import './dropdown.scss';
 
 const Dropdown = (props) => {
@@ -16,12 +16,6 @@ const Dropdown = (props) => {
     showCheckBox,
   } = props;
 
-  useEffect(() => {
-    console.log('Inside Dropdown.js!');
-    return () => {
-      console.log('Unmounting Dropdown.js!');
-    };
-  }, []);
 
   return (
     <div className='dropdown_panel'>

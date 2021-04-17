@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import StoryCard from '../../Components/StoryCard';
 import WatchlistHeader from '../../Components/WatchlistHeader';
 import useStory from '../../hooks/useStory';
@@ -32,10 +32,6 @@ const Watchlist = () => {
     selectedLanguages,
     selectedOrder
   );
-
-  useEffect(() => {
-    console.log('Inside Watchlist.js!');
-  }, []);
 
   const observer = useRef();
 

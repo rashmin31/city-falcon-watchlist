@@ -1,14 +1,11 @@
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect } from 'react';
+import React from 'react';
 import headerLogo from '../../assets/images/logo-1366.png';
 import profilePic from '../../assets/images/Rashmin_Photo.jpeg';
 import './header.scss';
 
 const Header = () => {
-  useEffect(() => {
-    console.log('Inside Header.js!');
-  }, []);
   return (
     <header className='header'>
       <div className='header_content'>

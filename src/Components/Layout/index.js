@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Watchlist from '../../Pages/Watchlist';
 import Header from '../Header';
 
 const Layout = () => {
-  useEffect(() => {
-    console.log('Inside Layout.js!');
-  }, []);
   return (
-    <div id='layout'>
+    <div id='layout' data-testid="layout">
       <Header />
       <Watchlist />
     </div>

@@ -1,6 +1,6 @@
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import CardFooter from '../CardFooter';
 import './storyCard.scss';
 
@@ -9,9 +9,6 @@ const StoryCard = (props) => {
 
   const [showDescription, setShowDescription] = useState(false);
 
-  useEffect(() => {
-    console.log('Inside StoryCard.js!');
-  }, []);
 
   function msToTime(ms) {
     let seconds = (ms / 1000).toFixed(0);

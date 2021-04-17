@@ -1,12 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const WatchlistBtn = (props) => {
   const { className, iconName, btnText, onIconBtnClick } = props;
-
-  useEffect(() => {
-    console.log('Inside WatchlistBtn.js!');
-  }, []);
 
   return (
     <button className={className} onClick={onIconBtnClick}>
